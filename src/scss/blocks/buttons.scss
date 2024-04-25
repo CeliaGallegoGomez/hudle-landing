@@ -22,4 +22,13 @@
     border-radius: 20px;
     box-shadow: 0 7px 3px rgba(0, 37, 46, 0.2);
   }
+
+  &__footer {
+    width: 160px;
+    height: 48px;
+    background-color: #ff52c1;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+  }
 }

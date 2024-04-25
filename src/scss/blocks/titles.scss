@@ -16,8 +16,12 @@
     margin-bottom: 0;
     margin-top: 0;
   }
-  &__draws {
+  &__draw {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &__footer {
+    text-align: initial;
   }
 }

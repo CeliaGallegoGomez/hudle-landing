@@ -1,12 +1,15 @@
 .draws {
- 
 }
 .draw {
-    &--blue {
-        background-color: #f6fbff;
-    }
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 28px;
+  padding-right: 29px;
+  &--blue {
+    background-color: #f6fbff;
+  }
 
-    &--white {
-        background-color: #fff;
-    }
+  &--white {
+    background-color: #fff;
+  }
 }
