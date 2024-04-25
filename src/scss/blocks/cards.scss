@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: center;
+  height: 365px;
+  justify-content: space-between;
+}
+
+.card {
+  &__span {
+    color: #808e9a;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22.9px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,1 +1,17 @@
+.text {
+  font-family: "Open-Sans", sans-serif;
+  text-align: center;
+  &__header {
+    font-size: 14px;
+    color: #00252e;
+    line-height: 21px;
+    font-weight: 500;
+  }
 
+  &__draw {
+    font-size: 14px;
+    color: #00252e;
+    line-height: 21px;
+    font-weight: 500;
+  }
+}

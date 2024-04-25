@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open-Sans", sans-serif;
+  &__nav {
+    width: 80px;
+    height: 24px;
+    font-size: 9.5px;
+    color: #ff52c1;
+    border: 0.5px solid #ff52c1;
+    border-radius: 34px;
+  }
+
+  &__header {
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: #ff52c1;
+    border-radius: 20px;
+    box-shadow: 0 7px 3px rgba(0, 37, 46, 0.2);
+  }
+}

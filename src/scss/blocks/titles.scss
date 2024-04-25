@@ -1,1 +1,23 @@
-
+.title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  &__header {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00252e;
+    line-height: 36px;
+  }
+  &__card {
+    text-align: initial;
+    font-size: 60.95px;
+    line-height: 91.4px;
+    font-weight: 700;
+    color: #00252e;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &__draws {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
