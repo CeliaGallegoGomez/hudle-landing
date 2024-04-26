@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .title {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -6,6 +8,13 @@
     font-weight: 700;
     color: #00252e;
     line-height: 36px;
+
+    @include responsive(desktop) {
+      width: 1014px;
+      height: 72px;
+      font-size: 48px;
+      line-height: 72px;
+    }
   }
   &__card {
     text-align: initial;
@@ -15,10 +24,19 @@
     color: #00252e;
     margin-bottom: 0;
     margin-top: 0;
+    @include responsive(desktop) {
+      font-size: 96px;
+      line-height: 144px;
+      text-align: initial;
+    }
   }
   &__draw {
     font-size: 20px;
     line-height: 30px;
+    @include responsive (desktop) {
+      font-size: 40px;
+      line-height: 60px;
+    }
   }
 
   &__footer {

@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .text {
   font-family: "Open-Sans", sans-serif;
   text-align: center;
@@ -6,6 +8,13 @@
     color: #00252e;
     line-height: 21px;
     font-weight: 500;
+
+    @include responsive(desktop) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 600px;
+      height: 90px;
+    }
   }
 
   &__draw {
@@ -13,6 +22,11 @@
     color: #00252e;
     line-height: 21px;
     font-weight: 500;
+    @include responsive(desktop) {
+      text-align: initial;
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   &__footer {

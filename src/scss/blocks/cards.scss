@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,13 @@
   align-items: center;
   height: 365px;
   justify-content: space-between;
+
+  @include responsive(desktop) {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .card {
@@ -15,5 +24,9 @@
     line-height: 22.9px;
     display: flex;
     justify-content: center;
+    @include responsive(desktop) {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 }

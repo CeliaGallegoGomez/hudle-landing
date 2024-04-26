@@ -1,3 +1,6 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
+
 .button {
   display: flex;
   align-items: center;
@@ -10,6 +13,16 @@
     color: #ff52c1;
     border: 0.5px solid #ff52c1;
     border-radius: 34px;
+    @include responsive(desktop) {
+      width: 136px;
+      height: 40px;
+      font-size: 16px;
+
+      @include hover {
+        color: #ff8ed7;
+        border: 0.5px solid #ff8ed7;
+      }
+    }
   }
 
   &__header {
@@ -21,6 +34,16 @@
     background-color: #ff52c1;
     border-radius: 20px;
     box-shadow: 0 7px 3px rgba(0, 37, 46, 0.2);
+    @include responsive(desktop) {
+      width: 400px;
+      height: 80px;
+      line-height: 30;
+      border-radius: 40px;
+      font-size: 20px;
+      @include hover {
+        opacity: 50%;
+      }
+    }
   }
 
   &__footer {

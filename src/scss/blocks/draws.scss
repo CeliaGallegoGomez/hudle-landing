@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .draws {
 }
 .draw {
@@ -5,11 +7,40 @@
   padding-bottom: 50px;
   padding-left: 28px;
   padding-right: 29px;
+
+  @include responsive(desktop) {
+    padding-top: 200px;
+  }
+
+  @include responsive(desktop) {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 520px;
+    }
+  }
+
   &--blue {
     background-color: #f6fbff;
+
+    @include responsive(desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 1400px;
+      height: 560px;
+    }
   }
 
   &--white {
     background-color: #fff;
+    @include responsive(desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 1400px;
+      height: 560px;
+    }
   }
 }

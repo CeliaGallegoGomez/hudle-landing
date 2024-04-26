@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .header {
   margin-top: 112px;
   margin-bottom: 120px;
@@ -10,10 +12,20 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 104px;
+
+    @include responsive(desktop) {
+      width: 1440px;
+      height: 317px;
+    }
   }
 
   &__image {
     padding-left: 40px;
     padding-right: 39px;
+
+    @include responsive(desktop) {
+      padding-left: 212px;
+      padding-right: 211px;
+    }
   }
 }
