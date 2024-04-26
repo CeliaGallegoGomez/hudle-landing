@@ -32,6 +32,11 @@
   &__footer {
     text-align: initial;
     font-weight: 600;
+    @include responsive(desktop) {
+      width: 316px;
+      line-height: 24px;
+      font-size: 14px;
+    }
     &--span {
       font-weight: 500;
       font-size: 14px;

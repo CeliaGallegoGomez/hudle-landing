@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .footer {
   background-color: #00252e;
   color: white;
@@ -6,8 +8,28 @@
   display: flex;
   flex-direction: column;
 
+  @include responsive(desktop) {
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1440px;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    @include responsive(desktop) {
+      width: 340px;
+    }
+  }
+
   &__newsletter {
     margin-bottom: 104px;
+
+    @include responsive(desktop) {
+      width: 520px;
+    }
   }
 
   &__search {
@@ -16,6 +38,14 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 112px;
+
+    @include responsive(desktop) {
+      @include responsive(desktop) {
+        width: 520px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
   }
   &__search--bar {
     width: 320px;
